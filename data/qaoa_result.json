@@ -1,0 +1,61 @@
+{
+ "state": "Andhra Pradesh",
+ "season": "Kharif",
+ "area": 10.0,
+ "water_avg": 700.0,
+ "budget_ha": 80000.0,
+ "max_crops": 3,
+ "reps": 5,
+ "qubits": 7,
+ "choices": 128,
+ "exact": {
+  "crops": "Groundnut + Dry chillies + Sunflower",
+  "profit": 2180910.2565
+ },
+ "p_exact": 0.024985121749497616,
+ "p_feasible": 0.8895241111675894,
+ "random_p_exact": 0.0078125,
+ "random_p_feasible": 0.3984375,
+ "random_profit_ratio": 0.14039565414747993,
+ "expected_profit_ratio": 0.6874494409207711,
+ "most_likely_is_exact": false,
+ "verified_max_diff": 3.608224830031759e-16,
+ "top": [
+  {
+   "crops": "Rice + Dry chillies",
+   "prob": 0.1639769350247799,
+   "feasible": true,
+   "profit": 1826242.328025801
+  },
+  {
+   "crops": "Dry chillies + Jowar + Gram",
+   "prob": 0.076952359397622,
+   "feasible": true,
+   "profit": 1781390.000166667
+  },
+  {
+   "crops": "Dry chillies + Gram + Sunflower",
+   "prob": 0.057593560903167994,
+   "feasible": true,
+   "profit": 1904833.3335000002
+  },
+  {
+   "crops": "Maize + Dry chillies",
+   "prob": 0.05454015513254489,
+   "feasible": true,
+   "profit": 1937892.3078533337
+  },
+  {
+   "crops": "Maize + Dry chillies + Gram",
+   "prob": 0.053923359754794856,
+   "feasible": true,
+   "profit": 1929558.9745200004
+  },
+  {
+   "crops": "Groundnut + Dry chillies",
+   "prob": 0.04723884010718012,
+   "feasible": true,
+   "profit": 2031076.9231666669
+  }
+ ]
+}

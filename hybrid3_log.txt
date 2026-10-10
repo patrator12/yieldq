@@ -1,0 +1,19 @@
+input features: 44 | epochs: 15 | seed: 42
+
+=== Encoder + classical head | trainable params: 809 (head: 19) ===
+epoch   1 | train loss 1.0734 | test RMSE 0.260 | 0.1s/epoch
+epoch   5 | train loss 0.7907 | test RMSE 0.262 | 0.0s/epoch
+epoch  10 | train loss 0.6945 | test RMSE 0.330 | 0.0s/epoch
+epoch  15 | train loss 0.6464 | test RMSE 0.283 | 0.0s/epoch
+
+=== Encoder + Qiskit PQC | trainable params: 805 (head: 12) ===
+epoch   1 | train loss 0.9874 | test RMSE 0.251 | 51.5s/epoch
+epoch   5 | train loss 0.8140 | test RMSE 0.254 | 52.2s/epoch
+epoch  10 | train loss 0.6457 | test RMSE 0.271 | 52.2s/epoch
+epoch  15 | train loss 0.6455 | test RMSE 0.291 | 51.9s/epoch
+
+                    model  params  RMSE   MAE    R2  train_sec
+        Naive: last year     NaN 0.260 0.178 0.873        NaN
+ Ridge (predicts change)     NaN 0.253 0.175 0.880        NaN
+Encoder + classical head   809.0 0.283 0.199 0.850      0.128
+    Encoder + Qiskit PQC   805.0 0.291 0.219 0.841    778.160

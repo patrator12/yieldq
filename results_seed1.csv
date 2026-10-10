@@ -1,0 +1,3 @@
+model,params,RMSE,MAE,R2,train_sec
+Encoder + classical head,761,0.389,0.279,0.733,0.125
+Encoder + Qiskit PQC (v2),757,0.394,0.255,0.725,853.121

@@ -1,0 +1,23 @@
+input features: 41 | epochs: 30
+
+=== Encoder + classical head | trainable params: 761 (head: 19) ===
+epoch   1 | train loss 0.8840 | test RMSE 0.741 | 0.1s/epoch
+epoch   5 | train loss 0.2314 | test RMSE 0.434 | 0.0s/epoch
+epoch  10 | train loss 0.2022 | test RMSE 0.425 | 0.0s/epoch
+epoch  15 | train loss 0.1846 | test RMSE 0.407 | 0.0s/epoch
+epoch  20 | train loss 0.1811 | test RMSE 0.415 | 0.0s/epoch
+epoch  25 | train loss 0.1668 | test RMSE 0.376 | 0.0s/epoch
+epoch  30 | train loss 0.1541 | test RMSE 0.387 | 0.0s/epoch
+
+=== Encoder + Qiskit PQC | trainable params: 754 (head: 12) ===
+epoch   1 | train loss 1.6400 | test RMSE 1.156 | 30.3s/epoch
+epoch   5 | train loss 0.9919 | test RMSE 0.848 | 30.2s/epoch
+epoch  10 | train loss 0.9623 | test RMSE 0.832 | 30.3s/epoch
+epoch  15 | train loss 0.9223 | test RMSE 0.786 | 30.2s/epoch
+epoch  20 | train loss 0.8570 | test RMSE 0.789 | 30.3s/epoch
+epoch  25 | train loss 0.8667 | test RMSE 0.810 | 30.1s/epoch
+epoch  30 | train loss 0.8722 | test RMSE 0.801 | 30.1s/epoch
+
+                    model  params  RMSE   MAE     R2  train_sec
+Encoder + classical head     761 0.387 0.283  0.735      0.220
+    Encoder + Qiskit PQC     754 0.801 0.615 -0.133    906.184

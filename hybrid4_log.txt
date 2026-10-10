@@ -1,0 +1,29 @@
+train 820 | val 115 | test 179 | features 44 | epochs 8 | seed 42
+
+=== Encoder + classical head | params 809 ===
+epoch  1 | train loss 1.106 | val RMSE 0.407
+epoch  2 | train loss 0.919 | val RMSE 0.416
+epoch  3 | train loss 0.876 | val RMSE 0.449
+epoch  4 | train loss 0.862 | val RMSE 0.425
+epoch  5 | train loss 0.826 | val RMSE 0.435
+epoch  6 | train loss 0.809 | val RMSE 0.400
+epoch  7 | train loss 0.781 | val RMSE 0.407
+epoch  8 | train loss 0.755 | val RMSE 0.433
+best epoch by validation: 6
+
+=== Encoder + Qiskit PQC | params 805 ===
+epoch  1 | train loss 0.957 | val RMSE 0.419
+epoch  2 | train loss 0.854 | val RMSE 0.452
+epoch  3 | train loss 0.845 | val RMSE 0.448
+epoch  4 | train loss 0.811 | val RMSE 0.406
+epoch  5 | train loss 0.762 | val RMSE 0.406
+epoch  6 | train loss 0.760 | val RMSE 0.414
+epoch  7 | train loss 0.735 | val RMSE 0.401
+epoch  8 | train loss 0.702 | val RMSE 0.400
+best epoch by validation: 8
+
+                    model  val_RMSE  test_RMSE  test_MAE  test_R2  params  best_ep  train_sec
+        Naive: last year     0.453      0.260     0.178    0.873     NaN      NaN        NaN
+ Ridge (predicts change)     0.406      0.275     0.200    0.858     NaN      NaN        NaN
+Encoder + classical head     0.400      0.245     0.164    0.888   809.0      6.0        0.0
+    Encoder + Qiskit PQC     0.400      0.290     0.206    0.842   805.0      8.0      366.0

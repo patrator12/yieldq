@@ -1,0 +1,5 @@
+model,params,RMSE,MAE,R2,train_sec
+Naive: last year,,0.26,0.178,0.873,
+Ridge (predicts change),,0.253,0.175,0.88,
+Encoder + classical head,809.0,0.283,0.199,0.85,0.128
+Encoder + Qiskit PQC,805.0,0.291,0.219,0.841,778.16
